@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestion de Bibliothèque</title>
+</head>
+<body>
+    <h1>Gestion de Bibliothèque</h1>
+    
+    <section>
+        <h2>Ajouter un livre</h2>
+        <form id="add-book-form">
+            <div>
+                <label for="title">Titre:</label>
+                <input type="text" id="title" required>
+            </div>
+            <div>
+                <label for="author">Auteur:</label>
+                <input type="text" id="author" required>
+            </div>
+            <button type="submit">Ajouter</button>
+        </form>
+    </section>
+    
+    <section>
+        <h2>Lister les livres</h2>
+        <button id="list-books-btn">Afficher tous les livres</button>
+        <div id="books-list"></div>
+    </section>
+    
+    <section>
+        <h2>Rechercher un livre</h2>
+        <form id="search-book-form">
+            <div>
+                <label for="search-title">Titre:</label>
+                <input type="text" id="search-title" required>
+            </div>
+            <button type="submit">Rechercher</button>
+        </form>
+        <div id="search-result"></div>
+    </section>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
