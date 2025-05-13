@@ -5,6 +5,7 @@ export class Library {
         this.books = this.loadBooks();
     }
 
+    // Charge les livres depuis le LocalStorage
     loadBooks() {
         const savedBooks = localStorage.getItem('libraryBooks');
         if (savedBooks) {
@@ -14,6 +15,7 @@ export class Library {
         return [];
     }
 
+    // Sauvegarde les livres dans le LocalStorage
     saveBooks() {
         localStorage.setItem('libraryBooks', JSON.stringify(this.books));
     }
